@@ -45,7 +45,7 @@ const Leads = () => {
     try {
       setError(null);
       setLoading(true);
-      const response = await fetch(`${BASE_MINERAR_DEV}${data.id}&maxPersistenceSize=15&maxLeadsListSize=19`, {
+      const response = await fetch(`${BASE_MINERAR_DEV}${data.id}&maxPersistenceSize=15&maxLeadsListSize=15`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
