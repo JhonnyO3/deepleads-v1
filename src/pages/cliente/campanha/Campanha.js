@@ -208,7 +208,7 @@ const Campanha = () => {
       setErro(null);
       setLoading(true);
       const response = await fetch(
-        `http://localhost:8080/api/whatsapp/send/document`,
+        `https://deepleads-apiv1.azurewebsites.net/api/whatsapp/send/document`,
         {
           method: "POST",
           headers: {

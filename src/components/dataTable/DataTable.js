@@ -58,7 +58,7 @@ const DataTable = () => {
   const handleSubmitUsuarios = (event) => {
     event.preventDefault();
     
-    fetch("http://localhost:8080/api/whatsapp/send/message", {
+    fetch("https://deepleads-apiv1.azurewebsites.net/api/whatsapp/send/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
