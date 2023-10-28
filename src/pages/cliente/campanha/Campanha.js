@@ -63,7 +63,7 @@ const Campanha = () => {
     const selectedIDs = new Set(ids);
     const linha = rows.filter((row) => selectedIDs.has(row.id));
     const obj = linha.map(({ name, phone, email, state, category }) => {
-      phone = "55" + phone;
+      phone =  phone;
       return { name, phone, state, category };
     });
     setData(obj);
